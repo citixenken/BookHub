@@ -11,6 +11,12 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/" element={<PopularWeekly />} />
+          <Route path="/" element={<PopularMonthly />} />
+          <Route path="/" element={<AnnualBooks />} />
+          <Route path="/" element={<MyLibrary />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/" element={<SourceRepo />} />
 
           {/* <Route path="/about">
           <About />
