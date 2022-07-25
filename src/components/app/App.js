@@ -2,7 +2,14 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import NavBar from "../navbar/NavBar";
+import Footer from "../footer/Footer";
 import Home from "../home/Home";
+import PopularWeekly from "../popularweekly/PopularWeekly";
+import PopularMonthly from "../popularmonthly/PopularMonthly";
+import AnnualBooks from "../annualbooks/AnnualBooks";
+import MyLibrary from "../mylibrary/MyLibrary";
+import Login from "../login/Login";
+import SourceRepo from "../sourcerepo/SourceRepo";
 
 function App() {
   return (
@@ -34,6 +41,7 @@ function App() {
           <h2>404 Page Not Found</h2>
         </Route> */}
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
