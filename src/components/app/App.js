@@ -10,11 +10,10 @@ import AnnualBooks from "../annualbooks/AnnualBooks";
 import MyLibrary from "../mylibrary/MyLibrary";
 import Login from "../login/Login";
 import SourceRepo from "../sourcerepo/SourceRepo";
-import BookDetails from "../BookDetails";
 
 function App() {
   return (
-    <div>
+    <div className="ui container main-container">
       <Router>
         <NavBar />
         <Routes>
@@ -46,8 +45,8 @@ function App() {
           <h2>404 Page Not Found</h2>
         </Route> */}
         </Routes>
-        <Footer />
       </Router>
+      <Footer />
     </div>
   );
 }
