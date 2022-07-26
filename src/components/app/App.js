@@ -18,12 +18,12 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<PopularWeekly />} />
-          <Route path="/" element={<PopularMonthly />} />
-          <Route path="/" element={<AnnualBooks />} />
-          <Route path="/" element={<MyLibrary />} />
-          <Route path="/" element={<Login />} />
-          <Route path="/" element={<SourceRepo />} />
+          <Route path="/weekly" element={<PopularWeekly />} />
+          <Route path="/monthly" element={<PopularMonthly />} />
+          <Route path="/annual" element={<AnnualBooks />} />
+          <Route path="/mylibrary" element={<MyLibrary />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/sourcerepo" element={<SourceRepo />} />
 
           {/* <Route path="/about">
           <About />

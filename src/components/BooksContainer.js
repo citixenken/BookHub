@@ -1,7 +1,11 @@
-import React from "react";
+import BookList from "./BookList";
 
 function BooksContainer() {
-  return <div>BooksContainer</div>;
+  return (
+    <div className="ui segment">
+      <BookList />
+    </div>
+  );
 }
 
 export default BooksContainer;
