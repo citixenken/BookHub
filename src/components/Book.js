@@ -1,18 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import BookDetails from "./BookDetails";
-function Book() {
+function Book({ book }) {
   return (
     <div className="ui raised link cards">
       <div className="card">
         <div className="image">
-          <img src="/images/avatar2/large/kristy.png" />
+          <img src={book.cover} />
         </div>
         <div className="content">
-          <a className="header">Book Title</a>
+          <a className="header">{book.name}</a>
           <div className="meta">
-            <span className="date">Book Author</span>
+            <span className="position">Rank: {book.position}</span>
           </div>
-          <div className="description">Book Description</div>
+          <div className="rating">Book Rating: {book.rating} out of 5</div>
         </div>
         <div className="extra content">
           <div className="ui basic green button">Book Details</div>

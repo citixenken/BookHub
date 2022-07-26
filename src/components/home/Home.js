@@ -19,13 +19,18 @@ function Home() {
         <div className="ui huge left icon fluid action input">
           <input type="text" placeholder="Search Book" />
           <i className="book icon"></i>
-          <select className="ui compact selection dropdown">
+          <select
+            className="ui compact selection dropdown"
+            style={{ fontSize: 20 }}
+          >
             <option value="name">Name</option>
             <option selected="" value="isbn">
               ISBN
             </option>
           </select>
-          <div className="ui button">Search</div>
+          <div className="ui button" style={{ fontSize: 20 }}>
+            Search
+          </div>
         </div>
       </div>
 

@@ -1,38 +1,14 @@
 import Book from "./Book";
 
-function BookList() {
+function BookList({ books }) {
+  console.log(books);
   return (
     <div className="ui doubling very padded stackable grid container">
-      <div className="four wide column">
-        <Book />
-      </div>
-      <div className="four wide column">
-        <Book />
-      </div>
-      <div className="four wide column">
-        <Book />
-      </div>
-      <div className="four wide column">
-        <Book />
-      </div>
-      <div className="four wide column">
-        <Book />
-      </div>
-      <div className="four wide column">
-        <Book />
-      </div>
-      <div className="four wide column">
-        <Book />
-      </div>
-      <div className="four wide column">
-        <Book />
-      </div>
-      <div className="four wide column">
-        <Book />
-      </div>
-      <div className="four wide column">
-        <Book />
-      </div>
+      {books.map((book) => (
+        <div className="four wide column">
+          <Book key={book.book_id} book={book} />
+        </div>
+      ))}
     </div>
   );
 }
