@@ -2,7 +2,7 @@ import Book from "./Book";
 
 function BookList() {
   return (
-    <div className="ui doubling stackable grid container">
+    <div className="ui doubling very padded stackable grid container">
       <div className="four wide column">
         <Book />
       </div>

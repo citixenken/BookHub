@@ -7,10 +7,10 @@ function NavBar() {
       <NavLink className="active header item" to="/">
         Home
       </NavLink>
-      <NavLink className="item" to="/weekly">
+      <NavLink className="item" to="/week">
         Most Popular - Weekly
       </NavLink>
-      <NavLink className="item" to="/monthly">
+      <NavLink className="item" to="/month">
         Most Popular - Monthly
       </NavLink>
       <NavLink className="item" to="/annual">

@@ -10,6 +10,7 @@ import AnnualBooks from "../annualbooks/AnnualBooks";
 import MyLibrary from "../mylibrary/MyLibrary";
 import Login from "../login/Login";
 import SourceRepo from "../sourcerepo/SourceRepo";
+import BookDetails from "../BookDetails";
 
 function App() {
   return (
@@ -18,12 +19,16 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/weekly" element={<PopularWeekly />} />
-          <Route path="/monthly" element={<PopularMonthly />} />
+          <Route path="/week" element={<PopularWeekly />} />
+          <Route path="/month" element={<PopularMonthly />} />
           <Route path="/annual" element={<AnnualBooks />} />
           <Route path="/mylibrary" element={<MyLibrary />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sourcerepo" element={<SourceRepo />} />
+          <Route
+            path="*"
+            element={<h2 style={{ color: "red" }}>404 Page Not Found</h2>}
+          />
 
           {/* <Route path="/about">
           <About />

@@ -2,7 +2,7 @@ import BookList from "./BookList";
 
 function BooksContainer() {
   return (
-    <div className="ui segment">
+    <div className="ui very padded segment">
       <BookList />
     </div>
   );

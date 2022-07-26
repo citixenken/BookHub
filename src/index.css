@@ -15,7 +15,8 @@ body {
     sans-serif;
 
   /* background image */
-  background-image: url("https://images.pexels.com/photos/159872/book-open-pages-literature-159872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  /* background-image: url("https://images.pexels.com/photos/159872/book-open-pages-literature-159872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+  background-image: url("https://images.pexels.com/photos/4207794/pexels-photo-4207794.jpeg");
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;

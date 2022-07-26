@@ -1,3 +1,5 @@
+import { Routes, Route } from "react-router-dom";
+import BookDetails from "./BookDetails";
 function Book() {
   return (
     <div className="ui raised link cards">
@@ -13,8 +15,11 @@ function Book() {
           <div className="description">Book Description</div>
         </div>
         <div className="extra content">
-          <div className="ui two buttons">
-            <div className="ui basic green button">Book Details</div>
+          <div className="ui basic green button">Book Details</div>
+          <div>
+            <Routes>
+              <Route path="/book:id" element={<BookDetails />} />
+            </Routes>
           </div>
         </div>
         <div className="extra content">
