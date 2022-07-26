@@ -12,7 +12,10 @@ function Book({ book }) {
           <div className="meta">
             <span className="position">Rank: {book.position}</span>
           </div>
-          <div className="rating">Book Rating: {book.rating} out of 5</div>
+          <div className="rating">
+            {/* set rating to one dp */}
+            Book Rating: {Math.round(book.rating * 10) / 10} out of 5
+          </div>
         </div>
         <div className="extra content">
           <div className="ui basic green button">Book Details</div>
