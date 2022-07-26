@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import BooksContainer from "../BooksContainer";
 function Home() {
-  const [loading, setLoading] = useState("");
+  const [books, setBooks] = useState(null);
 
   return (
     <div className="ui container">
@@ -34,9 +34,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="ui container">
-        <BooksContainer />
-      </div>
+      <div className="ui container">{books && <BooksContainer />}</div>
     </div>
   );
 }

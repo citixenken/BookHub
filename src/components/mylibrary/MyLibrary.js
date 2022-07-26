@@ -1,6 +1,8 @@
+import { useState } from "react";
 import BookList from "../BookList";
 
 function MyLibrary() {
+  const [books, setBooks] = useState(null);
   return (
     <div className="ui container">
       <div className="ui very padded segment">
@@ -8,9 +10,7 @@ function MyLibrary() {
           My Library Collection
         </h1>
       </div>
-      <div className="ui very padded segment">
-        <BookList />
-      </div>
+      <div className="ui very padded segment">{books && <BookList />}</div>
     </div>
   );
 }

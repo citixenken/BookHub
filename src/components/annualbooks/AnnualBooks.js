@@ -24,7 +24,7 @@ function AnnualBooks() {
         </h1>
       </div>
       <div className="ui very padded segment">
-        <BookList books={books} />
+        {books && <BookList books={books} />}
       </div>
     </div>
   );
