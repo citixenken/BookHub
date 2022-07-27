@@ -1,27 +1,49 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import BookList from "../BookList";
-import { GET_BOOK_BY_GENRE_ANNUAL, FETCH_OPTIONS } from "../../api";
+import { HAPI_BOOKS_API_URL, FETCH_OPTIONS } from "../../api";
 
 function AnnualBooks() {
   const [books, setBooks] = useState([]);
+  const { genre, year } = useParams();
 
   //GET DATA FROM HAPI API
   //======================
   useEffect(() => {
-    fetch(`${GET_BOOK_BY_GENRE_ANNUAL}`, FETCH_OPTIONS)
+    fetch(`${HAPI_BOOKS_API_URL}/nominees/${genre}/${year}`, FETCH_OPTIONS)
       .then((res) => res.json())
       // .then((books) => {
       //   books.map((book) => console.log("Book content: ", book));
       // })
       .then((books) => setBooks(books))
       .catch((err) => console.error(err));
-  }, []);
+  }, [genre, year]);
   return (
     <div className="ui container">
       <div className="ui very padded segment">
         <h1 className="ui header huge" style={{ color: "firebrick" }}>
-          Annual Bestsellers
+          Award-winning Books by Genre and Year
         </h1>
+        {/* SELECT GENRE */}
+        <select className="ui search dropdown">
+          <option disabled value="">
+            Select Genre
+          </option>
+          <option value="0">Romance</option>
+          <option value="1">Mystery</option>
+          <option value="2">Fiction</option>
+        </select>
+        {/* SELECT YEAR */}
+        <select className="ui search dropdown">
+          <option disabled value="">
+            Select Year
+          </option>
+          <option value="0">2022</option>
+          <option value="1">2021</option>
+          <option value="2">2020</option>
+          <option value="3">2019</option>
+          <option value="4">2018</option>
+        </select>
       </div>
       <div className="ui very padded segment">
         {books && <BookList books={books} />}

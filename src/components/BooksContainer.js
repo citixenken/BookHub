@@ -1,9 +1,9 @@
 import BookList from "./BookList";
 
-function BooksContainer() {
+function BooksContainer({ books }) {
   return (
     <div className="ui very padded segment">
-      <BookList />
+      <BookList books={books} />
     </div>
   );
 }

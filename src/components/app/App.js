@@ -17,10 +17,10 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Home />} />
           <Route path="/week" element={<PopularWeekly />} />
           <Route path="/month" element={<PopularMonthly />} />
-          <Route path="/annual" element={<AnnualBooks />} />
+          <Route path="/nominees" element={<AnnualBooks />} />
           <Route path="/mylibrary" element={<MyLibrary />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sourcerepo" element={<SourceRepo />} />

@@ -4,16 +4,16 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <nav className="ui pointing massive menu">
-      <NavLink className="active header item" to="/">
+      <NavLink className="active header item" to="/search">
         Home
       </NavLink>
       <NavLink className="item" to="/week">
-        Most Popular - Weekly
+        Most Popular - Week
       </NavLink>
       <NavLink className="item" to="/month">
-        Most Popular - Monthly
+        Most Popular - Month
       </NavLink>
-      <NavLink className="item" to="/annual">
+      <NavLink className="item" to="/nominees">
         Books of the Year
       </NavLink>
       <NavLink className="item" to="/mylibrary">
