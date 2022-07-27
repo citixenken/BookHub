@@ -16,18 +16,21 @@ function PopularWeekly() {
       // .then((books) => {
       //   books.map((book) => console.log("Book content: ", book));
       // })
+
       .then((books) => setBooks(books))
       .catch((err) => console.error(err));
+
+    console.log(books);
   }
 
   return (
     <div className="ui container">
-      <div className="ui very padded segment">
+      <div className="ui very padded piled tertiary segment">
         <h1 className="ui header huge" style={{ color: "firebrick" }}>
           Most Popular Books This Week By Genre
         </h1>
         <select
-          className="ui search dropdown"
+          className="ui search dropdown "
           name="genre"
           onChange={handleGenreChange}
         >
@@ -52,8 +55,15 @@ function PopularWeekly() {
           <option value="thriller">Thriller</option>
         </select>
       </div>
-      <div className="ui very padded segment">
-        {books && <BookList books={books} />}
+      <div className="ui very padded  teal inverted segment">
+        {books ? (
+          <BookList books={books} />
+        ) : (
+          <div class="ui very padded loading segment">
+            <p></p>
+            <p></p>
+          </div>
+        )}
       </div>
     </div>
   );

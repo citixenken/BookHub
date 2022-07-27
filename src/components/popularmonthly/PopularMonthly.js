@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
+import { useState } from "react";
 import BookList from "../BookList";
 import { HAPI_BOOKS_API_URL, FETCH_OPTIONS } from "../../api";
 
@@ -10,6 +9,7 @@ function PopularMonthly() {
 
   function handleChange(e) {
     setMonth(e.target.value);
+    setYear(e.target.value);
 
     //GET DATA FROM HAPI API
     //======================
@@ -18,13 +18,15 @@ function PopularMonthly() {
       // .then((books) => {
       //   books.map((book) => console.log("Book content: ", book));
       // })
+
       .then((books) => setBooks(books))
       .catch((err) => console.error(err));
+    console.log(books);
   }
 
   return (
     <div className="ui container">
-      <div className="ui very padded segment">
+      <div className="ui very padded piled tertiary segment">
         <h1 className="ui header huge" style={{ color: "firebrick" }}>
           Top 15 Most Popular Books By Year and Month
         </h1>
@@ -66,7 +68,7 @@ function PopularMonthly() {
           <option value="2016">2016</option>
         </select>
       </div>
-      <div className="ui very padded segment">
+      <div className="ui very padded teal inverted segment">
         {books && <BookList books={books} />}
       </div>
     </div>

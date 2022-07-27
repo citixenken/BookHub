@@ -10,39 +10,49 @@ function Home() {
   // ON BUTTON CLICK
   //================
   function handleBookSearch() {
+    //For any given book name, replace whote space with "+" and to lowercase
+    //======================================================================
+    booksearch = booksearch.replace(/\s+/g, "+").toLowerCase();
+
     //GET DATA FROM HAPI API
     //======================
     fetch(`${HAPI_BOOKS_API_URL}/search/${booksearch}`, FETCH_OPTIONS)
       .then((res) => res.json())
       .then((books) => setBooks(books))
       .catch((err) => console.error(err));
+
+    console.log(books);
     setBookSearch("");
   }
   return (
     <div className="ui container">
-      <div className="ui very padded segment">
-        <h1 className="ui header huge" style={{ color: "firebrick" }}>
-          Welcome To BookHub
+      <div className="ui very padded tertiary grey inverted segment">
+        <h1
+          className="ui header huge"
+          style={{ color: "firebrick", fontSize: 48 }}
+        >
+          <i className="book icon"></i>
+          BookHub
         </h1>
 
-        <h3 style={{ color: "firebrick" }}>
-          A repository of your favourite books
+        <h3 style={{ color: "teal", fontSize: 20 }}>
+          A Repository of Your Favourite Books
         </h3>
       </div>
 
-      <div className="ui padded segment">
+      <div className="ui very padded tertiary segment">
         {/* SEARCH INPUT */}
         <div className="ui input huge left icon fluid action search focus ">
           <input
             type="text"
             name="booksearch"
             value={booksearch}
-            placeholder="Search Book"
+            placeholder="Search Book By Name"
             onChange={(e) => setBookSearch(e.target.value)}
           />
           <i className="book icon"></i>
           <div
-            className="ui button"
+            className="ui button "
             style={{ fontSize: 20 }}
             onClick={handleBookSearch}
           >
@@ -52,7 +62,15 @@ function Home() {
       </div>
 
       <div className="ui container">
-        {books && <BooksContainer books={books} />}
+        {/* {books && <BooksContainer books={books} />} */}
+        {books ? (
+          <BooksContainer books={books} />
+        ) : (
+          <div class="ui very padded loading teal inverted segment">
+            <p></p>
+            <p></p>
+          </div>
+        )}
       </div>
     </div>
   );

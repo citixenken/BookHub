@@ -20,7 +20,7 @@ function NavBar() {
         My Library
       </NavLink>
       <div className="ui right massive menu">
-        <NavLink className="active blue item" to="/login">
+        <NavLink className="active teal item" to="/login">
           Login
         </NavLink>
         <NavLink className="red item" to="/sourcerepo">
