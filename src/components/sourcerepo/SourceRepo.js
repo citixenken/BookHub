@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function SourceRepo() {
   return (
     <div className="ui container">
@@ -10,6 +8,7 @@ function SourceRepo() {
           <a
             href="https://rapidapi.com/roftcomp-laGmBwlWLm/api/hapi-books/"
             target="_blank"
+            rel="noreferrer"
           >
             here
           </a>

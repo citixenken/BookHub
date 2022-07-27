@@ -12,11 +12,16 @@ function Home() {
   function handleBookSearch() {
     //For any given book name, replace whote space with "+" and to lowercase
     //======================================================================
-    booksearch = booksearch.replace(/\s+/g, "+").toLowerCase();
+    // booksearch = booksearch.replace(/\s+/g, "+").toLowerCase();
 
     //GET DATA FROM HAPI API
     //======================
-    fetch(`${HAPI_BOOKS_API_URL}/search/${booksearch}`, FETCH_OPTIONS)
+    fetch(
+      `${HAPI_BOOKS_API_URL}/search/${booksearch
+        .replace(/\s+/g, "+")
+        .toLowerCase()}`,
+      FETCH_OPTIONS
+    )
       .then((res) => res.json())
       .then((books) => setBooks(books))
       .catch((err) => console.error(err));
