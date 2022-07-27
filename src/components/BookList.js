@@ -4,9 +4,9 @@ function BookList({ books }) {
   // console.log(books);
   return (
     <div className="ui doubling very padded stackable grid container">
-      {books.map((book) => (
+      {books.map((book, idx) => (
         <div className="four wide column">
-          <Book key={book.book__id} book={book} />
+          <Book key={idx} book={book} />
         </div>
       ))}
     </div>

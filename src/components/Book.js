@@ -8,9 +8,12 @@ function Book({ book }) {
           <img src={book.cover} />
         </div>
         <div className="content">
-          <a className="header">{book.name}</a>
+          <a className="header">{book.name || book.title}</a>
           <div className="meta">
-            <span className="position">Rank: {book.position}</span>
+            <span className="position">
+              {/* Rank: {book.position || book.author} */}
+              {book.author}
+            </span>
           </div>
           <div className="rating">
             {/* set rating to one dp */}

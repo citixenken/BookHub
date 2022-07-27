@@ -2,87 +2,87 @@
   "books": [
     {
       "id": 1,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1448108591i/27071490.jpg",
+      "title": "Homegoing",
+      "author": "Yaa Gyasi",
+      "rating": 4.7
     },
     {
       "id": 2,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1572261616l/52892857.jpg",
+      "title": "The Color Purple",
+      "author": "Alice Walker",
+      "rating": 4.6
     },
     {
       "id": 3,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1446876799i/6759.jpg",
+      "title": "Infinite Jest",
+      "author": "David Foster Wallace",
+      "rating": 4.3
     },
     {
       "id": 4,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646444605i/485894.jpg",
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "rating": 3.8
     },
     {
       "id": 5,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1352082529i/37781.jpg",
+      "title": "Things Fall Apart",
+      "author": "Chinua Achebe",
+      "rating": 4.9
     },
     {
       "id": 6,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1312051518i/8686068.jpg",
+      "title": "The Devotion of Suspect X",
+      "author": "Keigo Higashino",
+      "rating": 4.0
     },
     {
       "id": 7,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1558216416i/36236124.jpg",
+      "title": "Fight Club",
+      "author": "Chuck Palahnuik",
+      "rating": 4.2
     },
     {
       "id": 8,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328011405i/10884.jpg",
+      "title": "Einstein: His Life and Universe",
+      "author": "Walter Isaacson",
+      "rating": 4.4
     },
     {
       "id": 9,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1451445646i/18143977.jpg",
+      "title": "All The Light We Cannot See",
+      "author": "Anthony Doerr",
+      "rating": 4.3
     },
     {
       "id": 10,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1377756377i/7604.jpg",
+      "title": "Lolita",
+      "author": "Vladimir Nabokov",
+      "rating": 3.9
     },
     {
       "id": 11,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630470982i/16902.jpg",
+      "title": "Walden",
+      "author": "Henry David Thoreau",
+      "rating": 3.8
     },
     {
       "id": 12,
-      "cover": "",
-      "title": "Reciplease",
-      "author": "A recipe tracking app",
-      "rating": ["Rails", "Bootstrap CSS"]
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1494273579i/34928122.jpg",
+      "title": "Artemis",
+      "author": "Andy Weir",
+      "rating": 3.7
     }
   ]
 }
