@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import BookList from "../BookList";
 import { HAPI_BOOKS_API_URL, FETCH_OPTIONS } from "../../api";
 
 function PopularMonthly() {
   const [books, setBooks] = useState([]);
-  const { year, month } = useParams();
+  const [year, setYear] = useState("2022");
+  const [month, setMonth] = useState("3");
 
-  //GET DATA FROM HAPI API
-  //======================
-  useEffect(() => {
+  function handleChange(e) {
+    setMonth(e.target.value);
+
+    //GET DATA FROM HAPI API
+    //======================
     fetch(`${HAPI_BOOKS_API_URL}/month/${year}/${month}`, FETCH_OPTIONS)
       .then((res) => res.json())
       // .then((books) => {
@@ -17,7 +20,7 @@ function PopularMonthly() {
       // })
       .then((books) => setBooks(books))
       .catch((err) => console.error(err));
-  }, [year, month]);
+  }
 
   return (
     <div className="ui container">
@@ -25,34 +28,42 @@ function PopularMonthly() {
         <h1 className="ui header huge" style={{ color: "firebrick" }}>
           Top 15 Most Popular Books By Year and Month
         </h1>
-        {/* SELECT YEAR */}
-        <select className="ui search dropdown">
-          <option disabled value="">
-            Select Year
-          </option>
-          <option value="0">2022</option>
-          <option value="1">2021</option>
-          <option value="2">2020</option>
-          <option value="3">2019</option>
-          <option value="4">2018</option>
-        </select>
+
         {/* SELECT MONTH */}
-        <select className="ui search dropdown">
-          <option disabled value="">
-            Select Month
-          </option>
-          <option value="0">1</option>
-          <option value="1">2</option>
-          <option value="2">3</option>
-          <option value="2">4</option>
-          <option value="2">5</option>
-          <option value="2">6</option>
-          <option value="2">7</option>
-          <option value="2">8</option>
-          <option value="2">9</option>
-          <option value="2">10</option>
-          <option value="2">11</option>
-          <option value="2">12</option>
+        <select
+          className="ui search dropdown"
+          name="month"
+          onChange={handleChange}
+        >
+          <option value="">Select Month</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+
+        {/* SELECT YEAR */}
+        <select
+          className="ui search dropdown"
+          name="year"
+          onChange={handleChange}
+        >
+          <option value="">Select Year</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
         </select>
       </div>
       <div className="ui very padded segment">

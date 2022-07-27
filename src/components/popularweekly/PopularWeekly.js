@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { useParams } from "react-router-dom";
 import BookList from "../BookList";
 import { HAPI_BOOKS_API_URL, FETCH_OPTIONS } from "../../api";
 
@@ -32,9 +31,7 @@ function PopularWeekly() {
           name="genre"
           onChange={handleGenreChange}
         >
-          <option disabled value="All">
-            Select Genre
-          </option>
+          <option value="All">Select Genre</option>
           <option value="biography">Biography</option>
           <option value="business">Business</option>
           <option value="classics">Classics</option>
