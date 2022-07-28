@@ -92,11 +92,81 @@
       "id": 13
     },
     {
-      "title": "A Brief History of Seven Killings",
-      "author": "Marlon James",
+      "title": "Arrow of God",
+      "author": "Chinua Achebe",
       "rating": "3.9",
-      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1399045083i/20893314.jpg",
-      "id": 14
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327265609i/37774.jpg",
+      "id": 15
+    },
+    {
+      "title": "No Longer at Ease",
+      "author": "Chinua Achebe",
+      "rating": "3.8",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1352082308i/111085.jpg",
+      "id": 16
+    },
+    {
+      "title": "Disgrace",
+      "author": "J.M Coetzee",
+      "rating": "3.8",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1385161943i/6192.jpg",
+      "id": 17
+    },
+    {
+      "title": "The Emperor of All Maladies: A Biography of Cancer",
+      "author": "Siddhartha Mukherjee",
+      "rating": "4.3",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1280771091i/7170627.jpg",
+      "id": 18
+    },
+    {
+      "title": "A Man Called Ove",
+      "author": "Fredrik Backman",
+      "rating": "4.4",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1405259930i/18774964.jpg",
+      "id": 19
+    },
+    {
+      "title": "Drunk",
+      "author": "Jackson Biko",
+      "rating": "3.9",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1507164385i/36355613.jpg",
+      "id": 20
+    },
+    {
+      "title": "The Gene: An Intimate History",
+      "author": "Siddhartha Mukherjee",
+      "rating": "4.4",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1452452965i/27276428.jpg",
+      "id": 21
+    },
+    {
+      "title": "Homo Deus: A History of Tomorrow",
+      "author": "Yuval Noah Harari",
+      "rating": "4.2",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1468760805i/31138556.jpg",
+      "id": 22
+    },
+    {
+      "title": "Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values",
+      "author": "Robert M. Pirsig",
+      "rating": "3.7",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1410136019i/629.jpg",
+      "id": 23
+    },
+    {
+      "title": "The Famished Road",
+      "author": "Ben Okri",
+      "rating": "3.7",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1344396715i/101094.jpg",
+      "id": 24
+    },
+    {
+      "title": "Foucault's Pendulum",
+      "author": "Umberto Eco ",
+      "rating": "3.9",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1396645125i/17841.jpg",
+      "id": 25
     }
   ]
 }

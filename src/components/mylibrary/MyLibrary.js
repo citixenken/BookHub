@@ -38,11 +38,19 @@ function MyLibrary() {
       .catch((err) => console.error(err));
   }
 
-  //SEARCH BOOKS VIA FILTER
-  //=======================
+  //SEARCH BOOKS
+  //============
   const booksToDisplay = books.filter((book) =>
     book.title.toLowerCase().includes(booksearch.toLowerCase())
   );
+  // console.log(booksearch);
+
+  //DELETE BOOK FROM DB
+  //===================
+  function handleBookDelete(deletedBook) {
+    const updatedBookList = books.filter((book) => book.id !== deletedBook.id);
+    setBooks(updatedBookList);
+  }
 
   return (
     <div className="ui container">
@@ -105,7 +113,7 @@ function MyLibrary() {
           <div className="ui doubling very padded stackable grid container">
             {booksToDisplay.map((book, idx) => (
               <div className="four wide column">
-                <Book key={idx} book={book} />
+                <Book key={idx} book={book} onDeleteBook={handleBookDelete} />
               </div>
             ))}
           </div>

@@ -1,6 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import BookDetails from "./BookDetails";
-function Book({ book }) {
+
+function Book({ book, onDeleteBook }) {
+  const bookLocalURL = `http://localhost:3000/books/${book.id}`;
+
+  //DELETE FROM DB
+  //==============
+  function handleBookDelete() {
+    fetch(bookLocalURL, { method: "DELETE" })
+      .then((res) => res.json())
+      .then(() => onDeleteBook(book))
+      .catch((err) => console.error(err));
+  }
   return (
     <div
       className="ui raised link cards"
@@ -34,14 +45,17 @@ function Book({ book }) {
           </div>
         </div>
         <div className="extra content">
-          <span className="left floated like">
-            <i className="like icon"></i>
-            Like
-          </span>
-          <span className="right floated star">
-            <i className="star icon"></i>
-            Favourite
-          </span>
+          <button className="ui submit primary button left floated">
+            ❤️ Fav
+          </button>
+          {/* DELETE BOOK */}
+          <button
+            onClick={handleBookDelete}
+            className="ui submit basic red button right floated"
+            style={{ color: "red" }}
+          >
+            Delete
+          </button>
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ function Footer() {
                 className="text-dark"
                 style={{ color: "turquoise" }}
                 href="https://linktr.ee/citixenken"
+                target="_blank"
               >
                 @citixenken
               </a>
