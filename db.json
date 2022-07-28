@@ -40,7 +40,7 @@
       "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1312051518i/8686068.jpg",
       "title": "The Devotion of Suspect X",
       "author": "Keigo Higashino",
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 7,
@@ -83,6 +83,20 @@
       "title": "Artemis",
       "author": "Andy Weir",
       "rating": 3.7
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "rating": "4.1",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg",
+      "id": 13
+    },
+    {
+      "title": "A Brief History of Seven Killings",
+      "author": "Marlon James",
+      "rating": "3.9",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1399045083i/20893314.jpg",
+      "id": 14
     }
   ]
 }

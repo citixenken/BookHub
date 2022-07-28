@@ -16,15 +16,25 @@ function MyLibrary() {
       .catch((err) => console.error(err));
   }, []);
 
-  //ADD NEW BOOK FORM
+  //DISPLAY NEW BOOK FORM
   //=================
-  function handleNewBookButton() {
+  function handleToggleBookButton() {
     setShowBookForm((showBookForm) => !showBookForm);
   }
 
   //POST NEW BOOK TO LOCAL DB
   //=========================
-  function handleNewBook(newBook) {}
+  function handleNewBook(newBook) {
+    const options = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newBook),
+    };
+    fetch(booksLocalURL, options)
+      .then((res) => res.json())
+      .then((newBook) => setBooks([...books, newBook]))
+      .catch((err) => console.error(err));
+  }
 
   return (
     <div className="ui container">
@@ -43,7 +53,7 @@ function MyLibrary() {
         <div
           className="ui secondary inverted button"
           tabindex="0"
-          onClick={handleNewBookButton}
+          onClick={handleToggleBookButton}
         >
           {showBookForm ? "Dismiss Form" : "Add New Book"}
 

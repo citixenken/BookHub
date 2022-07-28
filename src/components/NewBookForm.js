@@ -52,9 +52,9 @@ function NewBookForm({ onBookFormSubmission }) {
         <div className="required field">
           {/* <label>Book Rating</label> */}
           <input
-            type="text"
+            type="number"
             name="rating"
-            value={newBook.rating}
+            value={parseFloat(newBook.rating)}
             placeholder="Enter Book Rating"
             onChange={handleFormChange}
           />
@@ -73,7 +73,14 @@ function NewBookForm({ onBookFormSubmission }) {
           <div className="header">Form Completed</div>
           <p>Book details successfully added to database.</p>
         </div> */}
-        <div className="ui submit primary huge button">Submit</div>
+        {/* <div type="submit" className="ui submit primary huge button">
+          Submit
+        </div> */}
+        <input
+          className="ui submit primary huge button"
+          type="submit"
+          value="Submit"
+        />
       </form>
     </div>
   );
