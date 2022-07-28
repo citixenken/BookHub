@@ -27,7 +27,14 @@ function PopularMonthly() {
   return (
     <div className="ui container">
       <div className="ui very padded piled tertiary segment">
-        <h1 className="ui header huge" style={{ color: "firebrick" }}>
+        <h1
+          className="ui header huge"
+          style={{
+            color: "firebrick",
+            fontSize: 30,
+            fontFamily: "Varela Round",
+          }}
+        >
           Top 15 Most Popular Books By Year and Month
         </h1>
 

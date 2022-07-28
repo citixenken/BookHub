@@ -2,7 +2,12 @@ import "./Login.css";
 
 function Login() {
   return (
-    <div className="ui container">
+    <div
+      className="ui container"
+      style={{
+        fontFamily: "Varela Round",
+      }}
+    >
       <div className="page-login">
         <div className="ui centered grid container">
           <div className="nine wide column">

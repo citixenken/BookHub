@@ -3,8 +3,14 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <nav className="ui pointing massive menu">
-      <NavLink className="active header item" to="/search">
+    <nav
+      className="ui pointing massive menu"
+      style={{
+        fontSize: 18,
+        fontFamily: "Varela Round",
+      }}
+    >
+      <NavLink className=" header item" to="/search">
         Home
       </NavLink>
       <NavLink className="item" to="/week">
@@ -20,7 +26,7 @@ function NavBar() {
         My Library
       </NavLink>
       <div className="ui right massive menu">
-        <NavLink className="active teal item" to="/login">
+        <NavLink className="header item" to="/login">
           Login
         </NavLink>
         <NavLink className="red item" to="/sourcerepo">

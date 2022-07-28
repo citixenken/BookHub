@@ -34,13 +34,17 @@ function Home() {
       <div className="ui very padded tertiary grey inverted segment">
         <h1
           className="ui header huge"
-          style={{ color: "firebrick", fontSize: 48 }}
+          style={{
+            color: "firebrick",
+            fontSize: 52,
+            fontFamily: "Varela Round",
+          }}
         >
           <i className="book icon"></i>
           BookHub
         </h1>
 
-        <h3 style={{ color: "teal", fontSize: 20 }}>
+        <h3 style={{ color: "teal", fontSize: 20, fontFamily: "Varela Round" }}>
           A Repository of Your Favourite Books
         </h3>
       </div>
@@ -58,7 +62,7 @@ function Home() {
           <i className="book icon"></i>
           <div
             className="ui button "
-            style={{ fontSize: 20 }}
+            style={{ fontSize: 20, fontFamily: "Varela Round" }}
             onClick={handleBookSearch}
           >
             Search
@@ -82,7 +86,15 @@ function Home() {
           <div className="ui massive very padded inverted segment">
             <div className="ui active inverted dimmer">
               <div className="ui indeterminate large text loader">
-                <h6>Search To Retrieve Books</h6>
+                <h6
+                  style={{
+                    color: "firebrick",
+                    fontSize: 18,
+                    fontFamily: "Varela Round",
+                  }}
+                >
+                  Search To Retrieve Books
+                </h6>
               </div>
             </div>
             <p></p>

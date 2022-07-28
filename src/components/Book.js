@@ -2,7 +2,12 @@ import { Routes, Route } from "react-router-dom";
 import BookDetails from "./BookDetails";
 function Book({ book }) {
   return (
-    <div className="ui raised link cards">
+    <div
+      className="ui raised link cards"
+      style={{
+        fontFamily: "Varela Round",
+      }}
+    >
       <div className="card">
         <div className="image">
           <img src={book.cover} />

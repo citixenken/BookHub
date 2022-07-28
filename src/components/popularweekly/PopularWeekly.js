@@ -26,7 +26,14 @@ function PopularWeekly() {
   return (
     <div className="ui container">
       <div className="ui very padded piled tertiary segment">
-        <h1 className="ui header huge" style={{ color: "firebrick" }}>
+        <h1
+          className="ui header huge"
+          style={{
+            color: "firebrick",
+            fontSize: 30,
+            fontFamily: "Varela Round",
+          }}
+        >
           Most Popular Books This Week By Genre
         </h1>
         <select

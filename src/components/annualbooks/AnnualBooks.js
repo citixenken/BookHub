@@ -29,7 +29,14 @@ function AnnualBooks() {
   return (
     <div className="ui container">
       <div className="ui very padded piled tertiary segment">
-        <h1 className="ui header huge" style={{ color: "firebrick" }}>
+        <h1
+          className="ui header huge"
+          style={{
+            color: "firebrick",
+            fontSize: 30,
+            fontFamily: "Varela Round",
+          }}
+        >
           Award-winning Books by Genre and Year
         </h1>
         {/* SELECT GENRE */}
