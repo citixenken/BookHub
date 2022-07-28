@@ -10,23 +10,23 @@ function NavBar() {
         fontFamily: "Varela Round",
       }}
     >
-      <NavLink className=" header item" to="/search">
+      <NavLink className=" teal header item" to="/search">
         Home
       </NavLink>
-      <NavLink className="item" to="/week">
+      <NavLink className="teal item" to="/week">
         Most Popular - Week
       </NavLink>
-      <NavLink className="item" to="/month">
+      <NavLink className="teal item" to="/month">
         Most Popular - Month
       </NavLink>
-      <NavLink className="item" to="/nominees">
+      <NavLink className="teal item" to="/nominees">
         Books of the Year
       </NavLink>
-      <NavLink className="item" to="/mylibrary">
+      <NavLink className="teal item" to="/mylibrary">
         My Library
       </NavLink>
       <div className="ui right massive menu">
-        <NavLink className="header item" to="/login">
+        <NavLink className="header teal item" to="/login">
           Login
         </NavLink>
         <NavLink className="red item" to="/sourcerepo">

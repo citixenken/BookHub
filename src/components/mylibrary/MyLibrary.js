@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import BookList from "../BookList";
+import Book from "../Book";
 import NewBookForm from "../NewBookForm";
 
 function MyLibrary() {
   const [books, setBooks] = useState([]);
   const [showBookForm, setShowBookForm] = useState(false);
+  const [booksearch, setBookSearch] = useState("");
 
   //GET books from local DB
   //=======================
@@ -36,6 +38,12 @@ function MyLibrary() {
       .catch((err) => console.error(err));
   }
 
+  //SEARCH BOOKS VIA FILTER
+  //=======================
+  const booksToDisplay = books.filter((book) =>
+    book.title.toLowerCase().includes(booksearch.toLowerCase())
+  );
+
   return (
     <div className="ui container">
       <div className="ui very padded piled tertiary segment">
@@ -52,7 +60,7 @@ function MyLibrary() {
         {/* ADD NEW BOOK BUTTON */}
         <div
           className="ui secondary inverted button"
-          tabindex="0"
+          tabIndex="0"
           onClick={handleToggleBookButton}
         >
           {showBookForm ? "Dismiss Form" : "Add New Book"}
@@ -62,13 +70,45 @@ function MyLibrary() {
             <i class="right arrow icon"></i>
           </div> */}
         </div>
+
         {showBookForm ? (
           <NewBookForm onBookFormSubmission={handleNewBook} />
         ) : null}
       </div>
+
+      {/* SEARCH FIELD */}
+      <div className="ui very padded tertiary segment">
+        {/* SEARCH INPUT */}
+        <div className="ui input huge left icon fluid action search focus ">
+          <input
+            type="text"
+            name="booksearch"
+            value={booksearch}
+            placeholder="Search Book By Title"
+            onChange={(e) => setBookSearch(e.target.value)}
+          />
+          <i className="book icon"></i>
+          {/* <div
+            className="ui button "
+            style={{ fontSize: 20, fontFamily: "Varela Round" }}
+            // onClick={handleBookSearch}
+          >
+            Search
+          </div> */}
+        </div>
+      </div>
+      {/* SEARCH FIELD */}
+
       <div className="ui very padded teal secondary inverted  segment">
         {books ? (
-          <BookList books={books} />
+          // <BookList books={books} />
+          <div className="ui doubling very padded stackable grid container">
+            {booksToDisplay.map((book, idx) => (
+              <div className="four wide column">
+                <Book key={idx} book={book} />
+              </div>
+            ))}
+          </div>
         ) : (
           <div className="ui massive very padded inverted segment">
             <div className="ui active inverted dimmer">

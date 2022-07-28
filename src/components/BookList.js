@@ -1,7 +1,8 @@
 import Book from "./Book";
+import { useState } from "react";
 
 function BookList({ books }) {
-  // console.log(books);
+  // console.log(books)
   return (
     <div className="ui doubling very padded stackable grid container">
       {books.map((book, idx) => (

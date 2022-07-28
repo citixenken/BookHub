@@ -56,7 +56,7 @@ function Home() {
             type="text"
             name="booksearch"
             value={booksearch}
-            placeholder="Search Book By Name"
+            placeholder="Search Book By Title"
             onChange={(e) => setBookSearch(e.target.value)}
           />
           <i className="book icon"></i>
@@ -75,14 +75,6 @@ function Home() {
         {books ? (
           <BooksContainer books={books} />
         ) : (
-          // <div className="ui very padded loading teal inverted segment">
-          //   <div className="ui text loader">
-          //     Loading
-          //     {/* <p></p>
-          //     <p></p> */}
-          //   </div>
-          // </div>
-
           <div className="ui massive very padded inverted segment">
             <div className="ui active inverted dimmer">
               <div className="ui indeterminate large text loader">
