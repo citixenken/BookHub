@@ -55,13 +55,15 @@ function PopularWeekly() {
           <option value="thriller">Thriller</option>
         </select>
       </div>
-      <div className="ui very padded  teal inverted segment">
+
+      <div className="ui very padded teal inverted segment">
         {books ? (
           <BookList books={books} />
         ) : (
-          <div class="ui very padded loading segment">
-            <p></p>
-            <p></p>
+          <div className="ui active inverted dimmer">
+            <div className="ui indeterminate large text loader">
+              <h6>Search To Retrieve Books</h6>
+            </div>
           </div>
         )}
       </div>

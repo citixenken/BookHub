@@ -14,10 +14,10 @@ function Book({ book }) {
               {/* Rank: {book.position || book.author} */}
               {book.author}
             </span>
-          </div>
-          <div className="rating">
-            {/* set rating to one dp */}
-            Book Rating: {Math.round(book.rating * 10) / 10} out of 5
+            <div className="rating">
+              {/* set rating to one dp */}
+              {Math.round(book.rating * 10) / 10} out of 5
+            </div>
           </div>
         </div>
         <div className="extra content">
