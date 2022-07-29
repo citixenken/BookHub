@@ -6,8 +6,8 @@
 .pnp.js
 
 # files
-api.js
-db.json
+# api.js
+# db.json
 
 # testing
 /coverage
