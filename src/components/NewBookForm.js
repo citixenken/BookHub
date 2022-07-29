@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+
 function NewBookForm({ onBookFormSubmission }) {
   const [newBook, setNewBook] = useState({
     title: "",
@@ -7,6 +8,7 @@ function NewBookForm({ onBookFormSubmission }) {
     cover: "",
     description: "",
   });
+
   function handleFormChange(evt) {
     const name = evt.target.name;
     const value = evt.target.value;
@@ -79,7 +81,7 @@ function NewBookForm({ onBookFormSubmission }) {
             value={newBook.description}
             placeholder="Enter Book Description"
             onChange={handleFormChange}
-            style={{ fontSize: 18 }}
+            style={{ fontSize: 18, fontFamily: "Varela Round" }}
           ></textarea>
         </div>
         {/* <div className="ui success message">
