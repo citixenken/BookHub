@@ -41,7 +41,7 @@ function BookDetails() {
     <div className="ui container">
       <div className="ui very padded piled tertiary teal inverted segment">
         <div className="image" style={{ padding: 20 }}>
-          <img src={book.cover} />
+          <img src={book.cover} alt="book cover" />
         </div>
         <div className="content">
           <a

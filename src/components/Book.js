@@ -20,7 +20,7 @@ function Book({ book, onDeleteBook }) {
     >
       <div className="card">
         <div className="image">
-          <img src={book.cover} />
+          <img src={book.cover} alt="book cover" />
         </div>
         <div className="content">
           <a className="header">{book.name || book.title}</a>

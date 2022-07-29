@@ -13,6 +13,7 @@ function Footer() {
                 style={{ color: "turquoise" }}
                 href="https://linktr.ee/citixenken"
                 target="_blank"
+                rel="noreferrer"
               >
                 @citixenken
               </a>
