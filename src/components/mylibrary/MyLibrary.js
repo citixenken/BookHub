@@ -87,7 +87,7 @@ function MyLibrary() {
       {/* SEARCH FIELD */}
       <div className="ui very padded tertiary segment">
         {/* SEARCH INPUT */}
-        <div className="ui input huge left icon fluid action search focus ">
+        <div className="ui input huge left icon fluid search focus ">
           <input
             type="text"
             name="booksearch"
