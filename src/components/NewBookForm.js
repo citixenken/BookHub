@@ -5,6 +5,7 @@ function NewBookForm({ onBookFormSubmission }) {
     author: "",
     rating: "",
     cover: "",
+    description: "",
   });
   function handleFormChange(evt) {
     const name = evt.target.name;
@@ -23,6 +24,7 @@ function NewBookForm({ onBookFormSubmission }) {
       author: "",
       rating: "",
       cover: "",
+      description: "",
     });
   }
 
@@ -69,6 +71,17 @@ function NewBookForm({ onBookFormSubmission }) {
             onChange={handleFormChange}
           />
         </div>
+        <div className="required field">
+          {/* <label>Short Text</label> */}
+          <textarea
+            type="text"
+            name="description"
+            value={newBook.description}
+            placeholder="Enter Book Description"
+            onChange={handleFormChange}
+            style={{ fontSize: 18 }}
+          ></textarea>
+        </div>
         {/* <div className="ui success message">
           <div className="header">Form Completed</div>
           <p>Book details successfully added to database.</p>
@@ -80,6 +93,7 @@ function NewBookForm({ onBookFormSubmission }) {
           className="ui submit primary huge button"
           type="submit"
           value="Submit"
+          style={{ margin: 20 }}
         />
       </form>
     </div>
