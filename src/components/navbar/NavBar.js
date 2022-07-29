@@ -13,6 +13,9 @@ function NavBar() {
       <NavLink className=" teal header item" to="/search">
         Home
       </NavLink>
+      <NavLink className="teal item" to="/mylibrary">
+        My Library
+      </NavLink>
       <NavLink className="teal item" to="/week">
         Most Popular - Week
       </NavLink>
@@ -22,9 +25,7 @@ function NavBar() {
       <NavLink className="teal item" to="/nominees">
         Books of the Year
       </NavLink>
-      <NavLink className="teal item" to="/mylibrary">
-        My Library
-      </NavLink>
+
       <div className="ui right massive menu">
         <NavLink className="header teal item" to="/login">
           Login

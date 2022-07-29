@@ -4,10 +4,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 import NavBar from "../navbar/NavBar";
 import Footer from "../footer/Footer";
 import Home from "../home/Home";
+import MyLibrary from "../mylibrary/MyLibrary";
+import BookDetails from "../BookDetails";
 import PopularWeekly from "../popularweekly/PopularWeekly";
 import PopularMonthly from "../popularmonthly/PopularMonthly";
 import AnnualBooks from "../annualbooks/AnnualBooks";
-import MyLibrary from "../mylibrary/MyLibrary";
 import Login from "../login/Login";
 import SourceRepo from "../sourcerepo/SourceRepo";
 
@@ -18,10 +19,11 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/search" element={<Home />} />
+          <Route path="/mylibrary" element={<MyLibrary />} />
+          <Route path="/mylibrary/:id" element={<BookDetails />} />
           <Route path="/week" element={<PopularWeekly />} />
           <Route path="/month" element={<PopularMonthly />} />
           <Route path="/nominees" element={<AnnualBooks />} />
-          <Route path="/mylibrary" element={<MyLibrary />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sourcerepo" element={<SourceRepo />} />
           <Route

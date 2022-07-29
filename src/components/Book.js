@@ -1,5 +1,4 @@
-import { Routes, Route } from "react-router-dom";
-import BookDetails from "./BookDetails";
+import { Link } from "react-router-dom";
 
 function Book({ book, onDeleteBook }) {
   const bookLocalURL = `http://localhost:3000/books/${book.id}`;
@@ -37,11 +36,11 @@ function Book({ book, onDeleteBook }) {
           </div>
         </div>
         <div className="extra content">
-          <div className="ui basic green button">Book Details</div>
-          <div>
-            <Routes>
+          <div className="ui basic green button">
+            <Link to={`/mylibrary/${book.id}`}>Book Details</Link>
+            {/* <Routes>
               <Route path="/book:id" element={<BookDetails />} />
-            </Routes>
+            </Routes> */}
           </div>
         </div>
         <div className="extra content">
