@@ -51,7 +51,7 @@ function Book({ book, onDeleteBook }) {
             className="ui submit primary button left floated"
             onClick={handleFavState}
           >
-            {favState ? "❤️ Fav" : "🤍 Add To Fav"}
+            {favState ? "❤️Favorite" : "🤍Favorite"}
           </button>
 
           {/* DELETE BOOK */}
