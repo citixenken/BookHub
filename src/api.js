@@ -1,12 +1,15 @@
 export const FETCH_OPTIONS = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "97c67bebe1mshd809c1f20b185d1p194924jsnd8f02d67c42b",
+    "X-RapidAPI-Key": "26bb38a6cdmshd49a4e8f862b4b4p1aaa88jsnb2b1c078217a",
     "X-RapidAPI-Host": "hapi-books.p.rapidapi.com",
   },
 };
 
 export const HAPI_BOOKS_API_URL = "https://hapi-books.p.rapidapi.com";
+
+//UNUSED
+//======
 export const GET_BOOK_BY_NAME =
   "https://hapi-books.p.rapidapi.com/search/the+walking+dead";
 

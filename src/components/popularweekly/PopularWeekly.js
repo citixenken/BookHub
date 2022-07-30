@@ -67,10 +67,22 @@ function PopularWeekly() {
         {books ? (
           <BookList books={books} />
         ) : (
-          <div className="ui active inverted dimmer">
-            <div className="ui indeterminate large text loader">
-              <h6>Search To Retrieve Books</h6>
+          <div className="ui massive very padded inverted segment">
+            <div className="ui active inverted dimmer">
+              <div className="ui indeterminate large text loader">
+                <h6
+                  style={{
+                    color: "firebrick",
+                    fontSize: 18,
+                    fontFamily: "Varela Round",
+                  }}
+                >
+                  Search To Retrieve Books
+                </h6>
+              </div>
             </div>
+            <p></p>
+            <p></p>
           </div>
         )}
       </div>
