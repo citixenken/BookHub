@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Book({ book, onDeleteBook }) {
   // const bookLocalURL = `http://localhost:3000/books/${book.id}`;
   const bookLocalURL = `${process.env.REACT_APP_API_URL}/books/${book.id}`;
+  const [favState, setFavState] = useState("");
 
   //DELETE FROM DB
   //==============
@@ -11,6 +13,12 @@ function Book({ book, onDeleteBook }) {
       .then((res) => res.json())
       .then(() => onDeleteBook(book))
       .catch((err) => console.error(err));
+  }
+
+  //FAVOURITE BOOK ITEM
+  //===================
+  function handleFavState() {
+    setFavState((favState) => !favState);
   }
   return (
     <div
@@ -45,8 +53,11 @@ function Book({ book, onDeleteBook }) {
           </div>
         </div>
         <div className="extra content">
-          <button className="ui submit primary button left floated">
-            ❤️ Fav
+          <button
+            className="ui submit primary button left floated"
+            onClick={handleFavState}
+          >
+            {favState ? "❤️" : "🤍"}
           </button>
           {/* DELETE BOOK */}
           <button

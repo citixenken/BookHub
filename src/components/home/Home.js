@@ -61,7 +61,7 @@ function Home() {
           />
           <i className="book icon"></i>
           <div
-            className="ui button "
+            className="ui button primary"
             style={{ fontSize: 20, fontFamily: "Varela Round" }}
             onClick={handleBookSearch}
           >
