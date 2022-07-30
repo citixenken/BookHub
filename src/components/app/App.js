@@ -18,7 +18,7 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/search" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/mylibrary" element={<MyLibrary />} />
           <Route path="/mylibrary/:id" element={<BookDetails />} />
           <Route path="/week" element={<PopularWeekly />} />
