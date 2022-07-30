@@ -66,6 +66,7 @@ Here's the link to the [backend repository](https://github.com/citixenken/json-s
 Backend Heroku live [link](https://bookhub-app.herokuapp.com/)
 
 ## Demo
+![BookHub_Demo_Gif](public/bookhub-app.gif)
 
 ## Contributing
 
