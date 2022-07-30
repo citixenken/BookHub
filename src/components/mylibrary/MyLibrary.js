@@ -71,7 +71,8 @@ function MyLibrary() {
           tabIndex="0"
           onClick={handleToggleBookButton}
         >
-          {showBookForm ? "Dismiss Form" : "Add New Book"}
+          {/* {showBookForm ? "Dismiss Form" : "Add New Book"} */}
+          Add New Book
         </div>
 
         {showBookForm ? (
