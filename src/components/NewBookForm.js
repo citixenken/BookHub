@@ -34,7 +34,7 @@ function NewBookForm({ onBookFormSubmission }) {
   }
 
   return (
-    <div>
+    <div className="ui container ">
       {showBookForm ? null : (
         <div className="ui very padded teal inverted segment">
           <form className="ui form big success" onSubmit={handleFormSubmit}>

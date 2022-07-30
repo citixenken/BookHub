@@ -70,6 +70,7 @@ function MyLibrary() {
           className="ui secondary inverted button"
           tabIndex="0"
           onClick={handleToggleBookButton}
+          style={{ margin: 10, padding: 20 }}
         >
           {/* {showBookForm ? "Dismiss Form" : "Add New Book"} */}
           Add New Book
