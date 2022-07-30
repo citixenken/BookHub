@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 function Book({ book, onDeleteBook }) {
-  const bookLocalURL = `http://localhost:3000/books/${book.id}`;
+  // const bookLocalURL = `http://localhost:3000/books/${book.id}`;
+  const bookLocalURL = `${process.env.REACT_APP_API_URL}/books/${book.id}`;
 
   //DELETE FROM DB
   //==============

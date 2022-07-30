@@ -9,7 +9,8 @@ function MyLibrary() {
 
   //GET books from local DB
   //=======================
-  const booksLocalURL = "http://localhost:3000/books";
+  // const booksLocalURL = "http://localhost:3000/books";
+  const booksLocalURL = `${process.env.REACT_APP_API_URL}/books`;
   useEffect(() => {
     fetch(booksLocalURL)
       .then((res) => res.json())

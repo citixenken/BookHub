@@ -6,7 +6,8 @@ function BookDetails() {
   const { id } = useParams();
   // console.log(params);
 
-  const bookLocalURL = `http://localhost:3000/books/${id}`;
+  // const bookLocalURL = `http://localhost:3000/books/${id}`;
+  const bookLocalURL = `${process.env.REACT_APP_API_URL}/books/${id}`;
 
   useEffect(() => {
     fetch(bookLocalURL)
