@@ -35,7 +35,7 @@ function AnnualBooks() {
             fontFamily: "Varela Round",
           }}
         >
-          Award-winning Books by Genre and Year
+          Award-winning Books by Genre
         </h1>
         {/* SELECT GENRE */}
         <select
