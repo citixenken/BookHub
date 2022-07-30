@@ -4,16 +4,16 @@ import { HAPI_BOOKS_API_URL, FETCH_OPTIONS } from "../../api";
 
 function PopularMonthly() {
   const [books, setBooks] = useState([]);
-  const [year, setYear] = useState("2022");
+  // const [year, setYear] = useState("2022");
   const [month, setMonth] = useState("3");
 
   function handleChange(e) {
     setMonth(e.target.value);
-    setYear(e.target.value);
+    // setYear(e.target.value);
 
     //GET DATA FROM HAPI API
     //======================
-    fetch(`${HAPI_BOOKS_API_URL}/month/${year}/${month}`, FETCH_OPTIONS)
+    fetch(`${HAPI_BOOKS_API_URL}/month/2022/${month}`, FETCH_OPTIONS)
       .then((res) => res.json())
       // .then((books) => {
       //   books.map((book) => console.log("Book content: ", book));
@@ -35,7 +35,8 @@ function PopularMonthly() {
             fontFamily: "Varela Round",
           }}
         >
-          Top 15 Most Popular Books By Year and Month
+          {/* Top 15 Most Popular Books By Year and Month */}
+          Top 15 Most Popular Books By Month
         </h1>
 
         {/* SELECT MONTH */}
@@ -60,7 +61,7 @@ function PopularMonthly() {
         </select>
 
         {/* SELECT YEAR */}
-        <select
+        {/* <select
           className="ui search dropdown"
           name="year"
           onChange={handleChange}
@@ -73,7 +74,7 @@ function PopularMonthly() {
           <option value="2018">2018</option>
           <option value="2017">2017</option>
           <option value="2016">2016</option>
-        </select>
+        </select> */}
       </div>
       <div className="ui very padded teal inverted segment">
         {books && <BookList books={books} />}

@@ -5,17 +5,15 @@ import { HAPI_BOOKS_API_URL, FETCH_OPTIONS } from "../../api";
 function AnnualBooks() {
   const [books, setBooks] = useState([]);
   const [genre, setGenre] = useState("romance");
-  const [year, setYear] = useState("2020");
+  // const [year, setYear] = useState("2020");
 
   function handleChange(e) {
     setGenre(e.target.value);
-    setYear(e.target.value);
-    // setGenre(e.target.value);
     // setYear(e.target.value);
 
     //GET DATA FROM HAPI API
     //======================
-    fetch(`${HAPI_BOOKS_API_URL}/nominees/${genre}/${year}`, FETCH_OPTIONS)
+    fetch(`${HAPI_BOOKS_API_URL}/nominees/${genre}/2020`, FETCH_OPTIONS)
       .then((res) => res.json())
       // .then((books) => {
       //   books.map((book) => console.log("Book content: ", book));
@@ -67,7 +65,7 @@ function AnnualBooks() {
         </select>
 
         {/* SELECT YEAR */}
-        <select
+        {/* <select
           className="ui search dropdown"
           name="year"
           onChange={handleChange}
@@ -80,7 +78,7 @@ function AnnualBooks() {
           <option value="2018">2018</option>
           <option value="2017">2017</option>
           <option value="2016">2016</option>
-        </select>
+        </select> */}
       </div>
       <div className="ui very padded teal inverted segment">
         {books && <BookList books={books} />}
