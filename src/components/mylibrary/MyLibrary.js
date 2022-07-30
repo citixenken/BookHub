@@ -43,7 +43,6 @@ function MyLibrary() {
   const booksToDisplay = books.filter((book) =>
     book.title.toLowerCase().includes(booksearch.toLowerCase())
   );
-  // console.log(booksearch);
 
   //DELETE BOOK FROM DB
   //===================
@@ -65,6 +64,7 @@ function MyLibrary() {
         >
           My Library Collection
         </h1>
+
         {/* ADD NEW BOOK BUTTON */}
         <div
           className="ui secondary inverted button"
@@ -72,11 +72,6 @@ function MyLibrary() {
           onClick={handleToggleBookButton}
         >
           {showBookForm ? "Dismiss Form" : "Add New Book"}
-
-          {/* <div class="hidden content">
-            <i class="book icon"></i>
-            <i class="right arrow icon"></i>
-          </div> */}
         </div>
 
         {showBookForm ? (
@@ -96,20 +91,12 @@ function MyLibrary() {
             onChange={(e) => setBookSearch(e.target.value)}
           />
           <i className="book icon"></i>
-          {/* <div
-            className="ui button "
-            style={{ fontSize: 20, fontFamily: "Varela Round" }}
-            // onClick={handleBookSearch}
-          >
-            Search
-          </div> */}
         </div>
       </div>
       {/* SEARCH FIELD */}
 
       <div className="ui very padded teal secondary inverted  segment">
         {books ? (
-          // <BookList books={books} />
           <div className="ui doubling very padded stackable grid container">
             {booksToDisplay.map((book, idx) => (
               <div className="four wide column">

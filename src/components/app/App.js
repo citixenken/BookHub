@@ -30,22 +30,6 @@ function App() {
             path="*"
             element={<h2 style={{ color: "red" }}>404 Page Not Found</h2>}
           />
-
-          {/* <Route path="/about">
-          <About />
-        </Route>
-        <Route exact path="/projects">
-          <ProjectList />
-        </Route>
-        <Route exact path="/projects/new">
-          <NewProject />
-        </Route>
-        <Route exact path="/projects/:id">
-          <ProjectDetail />
-        </Route> */}
-          {/* <Route path="*">
-          <h2>404 Page Not Found</h2>
-        </Route> */}
         </Routes>
       </Router>
       <Footer />

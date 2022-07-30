@@ -15,13 +15,8 @@ function PopularMonthly() {
     //======================
     fetch(`${HAPI_BOOKS_API_URL}/month/2022/${month}`, FETCH_OPTIONS)
       .then((res) => res.json())
-      // .then((books) => {
-      //   books.map((book) => console.log("Book content: ", book));
-      // })
-
       .then((books) => setBooks(books))
       .catch((err) => console.error(err));
-    console.log(books);
   }
 
   return (

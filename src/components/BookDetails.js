@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 function BookDetails() {
   const [book, setBook] = useState(null);
   const { id } = useParams();
-  // console.log(params);
 
   // const bookLocalURL = `http://localhost:3000/books/${id}`;
   const bookLocalURL = `${process.env.REACT_APP_API_URL}/books/${id}`;
@@ -65,7 +64,6 @@ function BookDetails() {
                 fontFamily: "Varela Round",
               }}
             >
-              {/* Rank: {book.position || book.author} */}
               {book.author}
             </span>
             <div
@@ -77,7 +75,7 @@ function BookDetails() {
                 padding: 20,
               }}
             >
-              {/* set rating to one dp */}
+              {/* set rating to 1 dp */}
               {Math.round(book.rating * 10) / 10} out of 5
             </div>
             <div

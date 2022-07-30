@@ -34,7 +34,6 @@ function NewBookForm({ onBookFormSubmission }) {
     <div className="ui very padded teal inverted segment">
       <form className="ui form big success" onSubmit={handleFormSubmit}>
         <div className="required field">
-          {/* <label>Book Title</label> */}
           <input
             type="text"
             name="title"
@@ -44,7 +43,6 @@ function NewBookForm({ onBookFormSubmission }) {
           />
         </div>
         <div className="required field">
-          {/* <label>Book Author</label> */}
           <input
             type="text"
             name="author"
@@ -54,7 +52,6 @@ function NewBookForm({ onBookFormSubmission }) {
           />
         </div>
         <div className="required field">
-          {/* <label>Book Rating</label> */}
           <input
             type="number"
             name="rating"
@@ -64,7 +61,6 @@ function NewBookForm({ onBookFormSubmission }) {
           />
         </div>
         <div className="required field">
-          {/* <label>Book Cover URL</label> */}
           <input
             type="text"
             name="cover"
@@ -74,7 +70,6 @@ function NewBookForm({ onBookFormSubmission }) {
           />
         </div>
         <div className="required field">
-          {/* <label>Short Text</label> */}
           <textarea
             type="text"
             name="description"

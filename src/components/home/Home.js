@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { useParams } from "react-router-dom";
 import BooksContainer from "../BooksContainer";
 import { HAPI_BOOKS_API_URL, FETCH_OPTIONS } from "../../api";
 
@@ -71,7 +70,6 @@ function Home() {
       </div>
 
       <div className="ui container">
-        {/* {books && <BooksContainer books={books} />} */}
         {books ? (
           <BooksContainer books={books} />
         ) : (

@@ -15,10 +15,6 @@ function AnnualBooks() {
     //======================
     fetch(`${HAPI_BOOKS_API_URL}/nominees/${genre}/2020`, FETCH_OPTIONS)
       .then((res) => res.json())
-      // .then((books) => {
-      //   books.map((book) => console.log("Book content: ", book));
-      // })
-
       .then((books) => setBooks(books))
       .catch((err) => console.error(err));
     console.log(books);
@@ -37,6 +33,7 @@ function AnnualBooks() {
         >
           Award-winning Books by Genre
         </h1>
+
         {/* SELECT GENRE */}
         <select
           className="ui search dropdown"

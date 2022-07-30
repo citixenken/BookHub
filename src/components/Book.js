@@ -34,12 +34,9 @@ function Book({ book, onDeleteBook }) {
         <div className="content">
           <a className="header">{book.name || book.title}</a>
           <div className="meta">
-            <span className="position">
-              {/* Rank: {book.position || book.author} */}
-              {book.author}
-            </span>
+            <span className="position">{book.author}</span>
             <div className="rating">
-              {/* set rating to one dp */}
+              {/* set rating to 1 dp */}
               {Math.round(book.rating * 10) / 10} out of 5
             </div>
           </div>
@@ -47,9 +44,6 @@ function Book({ book, onDeleteBook }) {
         <div className="extra content">
           <div className="ui basic green button">
             <Link to={`/mylibrary/${book.id}`}>Book Details</Link>
-            {/* <Routes>
-              <Route path="/book:id" element={<BookDetails />} />
-            </Routes> */}
           </div>
         </div>
         <div className="extra content">
@@ -57,8 +51,9 @@ function Book({ book, onDeleteBook }) {
             className="ui submit primary button left floated"
             onClick={handleFavState}
           >
-            {favState ? "❤️" : "🤍"}
+            {favState ? "❤️ Fav" : "🤍 Add To Fav"}
           </button>
+
           {/* DELETE BOOK */}
           <button
             onClick={handleBookDelete}
