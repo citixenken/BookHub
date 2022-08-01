@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <nav
-      className="ui pointing massive menu"
+      className="ui pointing massive stackable menu"
       style={{
         fontSize: 18,
         fontFamily: "Varela Round",
