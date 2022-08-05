@@ -1,8 +1,10 @@
 export const FETCH_OPTIONS = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "26bb38a6cdmshd49a4e8f862b4b4p1aaa88jsnb2b1c078217a",
-    "X-RapidAPI-Host": "hapi-books.p.rapidapi.com",
+    // "X-RapidAPI-Key": "26bb38a6cdmshd49a4e8f862b4b4p1aaa88jsnb2b1c078217a",
+    "X-RapidAPI-Key": ${process.env.HAPI_KEY}
+    // "X-RapidAPI-Host": "hapi-books.p.rapidapi.com",
+    "X-RapidAPI-Host": ${process.env.HAPI_HOST}
   },
 };
 
