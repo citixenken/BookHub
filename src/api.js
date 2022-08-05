@@ -1,8 +1,8 @@
 export const FETCH_OPTIONS = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": `${process.env.HAPI_KEY}`,
-    "X-RapidAPI-Host": `${process.env.HAPI_HOST}`,
+    "X-RapidAPI-Key": process.env.HAPI_KEY,
+    "X-RapidAPI-Host": process.env.HAPI_HOST,
   },
 };
 
