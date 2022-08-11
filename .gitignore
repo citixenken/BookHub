@@ -6,8 +6,10 @@
 .pnp.js
 
 # files
-api.js
+# api.js
 # db.json
+.env.development
+.env.production
 
 # testing
 /coverage
