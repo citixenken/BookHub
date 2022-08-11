@@ -8,8 +8,8 @@
 # files
 # api.js
 # db.json
-.env.development
-.env.production
+# .env.development
+# .env.production
 
 # testing
 /coverage
